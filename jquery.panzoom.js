@@ -16,7 +16,7 @@
 
     // requires jQuery or Zepto
     if (undefined === $) {
-        throw 'Requires either jQuery or Zepto.';
+        throw 'Requires jQuery';
     }
 
     // CSS to apply to elements on init
