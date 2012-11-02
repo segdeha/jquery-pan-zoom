@@ -6,7 +6,7 @@
  * @license MIT
  * @usage $.panzoom(); // use defaults
  *        $.panzoom('#mycontainer a', { 'small' : 'Zoom in by clicking', 'large' : 'Zoom out by clicking' }); // override defaults
- * @requires jQuery or Zepto
+ * @requires jQuery
  */
 
 ;(function ($, undefined) {
@@ -265,4 +265,4 @@
     $.extend({
         panzoom : panzoom
     });
-}(jQuery || Zepto));
+}(jQuery));
