@@ -6,16 +6,16 @@
  * @license MIT
  * @usage $.panzoom(); // use defaults
  *        $.panzoom('#mycontainer a', { 'small' : 'Zoom in by clicking', 'large' : 'Zoom out by clicking' }); // override defaults
- * @requires jQuery
+ * @requires jQuery or Zepto
  */
 
-;(function ($) {
+;(function ($, undefined) {
     var _css, _titles;
 
     "use strict";
 
     // requires jQuery or Zepto
-    if (!$) {
+    if (undefined === $) {
         throw 'Requires either jQuery or Zepto.';
     }
 
@@ -30,8 +30,8 @@
         },
         img : {
             'position' : 'absolute',
-            'top'      : '0px',
-            'left'     : '0px'
+            'top'      : 0,
+            'left'     : 0
         }
     };
 
@@ -265,4 +265,4 @@
     $.extend({
         panzoom : panzoom
     });
-}(jQuery));
+}(jQuery || Zepto));
